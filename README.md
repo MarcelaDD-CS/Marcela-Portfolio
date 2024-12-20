@@ -19,6 +19,11 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run format`
+
+Formats the code using Prettier.\
+Ensure all code is formatted before committing.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
