@@ -80,15 +80,35 @@ function Contact() {
           >
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autoComplete="name"
+                placeholder="Your Name"
+                required
+              />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autoComplete="email"
+                placeholder="Your Email"
+                required
+              />
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                autoComplete="off"
+                placeholder="Your Message"
+                required
+              ></textarea>
             </div>
             <div className="form-buttons">
               <button type="submit" className="submit-btn">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Blog from './components/Blog';
@@ -12,9 +12,9 @@ import './styles/styles.css';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
-      <Routes>
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
