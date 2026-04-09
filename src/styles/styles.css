@@ -1808,7 +1808,7 @@ feedback-form .radio-group {
   }
 }
 .intro-blog-article {
-  background-image: url('/src/images/blog/background.png');
+  background-image: linear-gradient(135deg, #f4f0ff 0%, #dfe0ef 55%, #ffffff 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
