@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Footer() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <footer>
       <p>
@@ -9,35 +11,35 @@ function Footer() {
       <div className="social-links">
         <a href="https://facebook.com" aria-label="Facebook">
           <img
-            src={`${process.env.PUBLIC_URL}/images/facebook.webp`}
+            src={`${baseUrl}images/facebook.webp`}
             alt="Facebook Icon"
             className="social-icon"
           />
         </a>
         <a href="https://instagram.com" aria-label="Instagram">
           <img
-            src={`${process.env.PUBLIC_URL}/images/instagram.webp`}
+            src={`${baseUrl}images/instagram.webp`}
             alt="Instagram Icon"
             className="social-icon"
           />
         </a>
         <a href="https://linkedin.com" aria-label="LinkedIn">
           <img
-            src={`${process.env.PUBLIC_URL}/images/linkedin.webp`}
+            src={`${baseUrl}images/linkedin.webp`}
             alt="LinkedIn Icon"
             className="social-icon"
           />
         </a>
         <a href="https://github.com" aria-label="GitHub">
           <img
-            src={`${process.env.PUBLIC_URL}/images/github.webp`}
+            src={`${baseUrl}images/github.webp`}
             alt="GitHub Icon"
             className="social-icon"
           />
         </a>
         <a href="/blog" aria-label="Blog">
           <img
-            src={`${process.env.PUBLIC_URL}/images/blog.webp`}
+            src={`${baseUrl}images/blog.webp`}
             alt="Blog Icon"
             className="social-icon"
           />

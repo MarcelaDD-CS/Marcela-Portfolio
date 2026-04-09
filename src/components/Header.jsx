@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const baseUrl = import.meta.env.BASE_URL;
 
   // Auto-scroll to the top when the route changes
   useEffect(() => {
@@ -27,7 +28,7 @@ function Header() {
             </li>
             <li>
               <a href="https://teams.microsoft.com/l/meetup-join/YOUR_TEAMS_MEETING_LINK" target="_blank" rel="noopener noreferrer">
-                <img className="icon" src={`${process.env.PUBLIC_URL}/images/icons8-microsoft-teams-2019-48.png`} alt="Join a Microsoft Teams Meeting" />
+                <img className="icon" src={`${baseUrl}images/icons8-microsoft-teams-2019-48.png`} alt="Join a Microsoft Teams Meeting" />
                 <span className="text">Join a Teams Meeting</span>
               </a>
             </li>

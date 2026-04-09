@@ -1,12 +1,14 @@
 import React from 'react';
 
 function Home() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <main>
       <section className="intro">
         <div className="profile-picture">
           <img
-            src={`${process.env.PUBLIC_URL}/images/IMG_1760.JPG`}
+            src={`${baseUrl}images/IMG_1760.JPG`}
             alt="Diana"
           />
         </div>
@@ -15,7 +17,7 @@ function Home() {
           <h1>Diana Daniels</h1>
           <p>Cybersecurity Expertise and Innovative Software Solutions</p>
           <div className="buttons">
-            <a href={`${process.env.PUBLIC_URL}/pdf/ddcv.pdf`} className="btn">
+            <a href={`${baseUrl}pdf/ddcv.pdf`} className="btn">
               CV
             </a>
             <a href="/contact" className="btn">
@@ -29,7 +31,7 @@ function Home() {
         <div className="hobbies-list">
           <div className="hobby">
             <img
-              src={`${process.env.PUBLIC_URL}/images/Kind.png`}
+              src={`${baseUrl}images/Kind.png`}
               alt="Kindness"
             />
             <div className="hobby-description">
@@ -43,7 +45,7 @@ function Home() {
           </div>
           <div className="hobby">
             <img
-              src={`${process.env.PUBLIC_URL}/images/kindness.png`}
+              src={`${baseUrl}images/kindness.png`}
               alt="Collaboration"
             />
             <div className="hobby-description">
@@ -53,7 +55,7 @@ function Home() {
           </div>
           <div className="hobby">
             <img
-              src={`${process.env.PUBLIC_URL}/images/event.png`}
+              src={`${baseUrl}images/event.png`}
               alt="Networking and Tech Events"
             />
             <div className="hobby-description">
@@ -66,7 +68,7 @@ function Home() {
           </div>
           <div className="hobby">
             <img
-              src={`${process.env.PUBLIC_URL}/images/solving.png`}
+              src={`${baseUrl}images/solving.png`}
               alt="Puzzle Solving"
             />
             <div className="hobby-description">
